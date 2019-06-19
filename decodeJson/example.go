@@ -8,10 +8,7 @@ import (
 var JSON = `{
 	"name":"Mark Taylor",
 	"jobtitle": "software Dev",
-	"phone": {
-		"home":"12-456-78",
-		"office":"890-123-456"
-	},
+	"phone": "1829990",
 	"email":"ancd@gmail.com"
 }`
 
@@ -21,7 +18,7 @@ func main() {
 
 	fmt.Printf("Json type %T\n", JSON)
 
-	info := make(map[string]interface{})
+	info := make(map[string]string)
 
 	err := json.Unmarshal([]byte(JSON), &info)
 
