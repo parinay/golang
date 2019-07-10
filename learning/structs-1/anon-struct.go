@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Normal go struct declaration
 
@@ -119,5 +121,4 @@ func main() {
 	p.int = 50058
 	fmt.Println("Person 1", p)
 
-	// Exported structs and fields
 }
