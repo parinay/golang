@@ -25,6 +25,22 @@ type Employee struct {
 	currency string
 }
 
+type address struct {
+	city  string
+	state string
+}
+
+type person struct {
+	firstname string
+	lastname  string
+	address
+}
+
+// methods on anonymous fields of struct p, address
+func (a address) fulladdress() {
+	fmt.Printf("Full address: %s %s", a.city, a.state)
+}
+
 func main() {
 	emp1 := Employee{
 		name:     "Kaka",
@@ -37,5 +53,17 @@ func main() {
 	fmt.Println("Employee 1 (changeName)- ", emp1)
 	emp1.changeSalary(0)
 	fmt.Println("Employee 1 (changeSalary)- ", emp1)
+
+	// methods of anonymous structs fields
+
+	p := person{
+		firstname: "Narayan",
+		lastname:  "Murthy",
+		address: address{
+			city:  "B'lore",
+			state: "K'taka",
+		},
+	}
+	p.fulladdress()
 
 }

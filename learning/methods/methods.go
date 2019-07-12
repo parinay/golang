@@ -18,7 +18,18 @@ func (r *rect) area() int {
 	return r.width * r.height
 }
 
-// value receivers
+// function with value argument
+
+func area(r rect) {
+	fmt.Printf("Area of rectangle - function results:%d \n", r.height*r.width)
+}
+
+// function with pointer argument
+func perim(r *rect) {
+	fmt.Println("Rectangle perimeter:", 2*r.width+2*r.height)
+}
+
+// method with value receivers
 func (r rect) perim() int {
 	return 2*r.width + 2*r.height
 }
@@ -36,16 +47,31 @@ func (c Circle) perm() float64 {
 func main() {
 	r := rect{width: 10, height: 5}
 
-	fmt.Println("area: ", r.area())
-	fmt.Println("perimeter:", r.perim())
-
-	rp := &r
-	fmt.Println("area: ", rp.area())
-	fmt.Println("perim: ", rp.perim())
+	fmt.Println("Rectangle area: ", r.area())
+	fmt.Println("Rectangle perimeter:", r.perim())
 
 	c := Circle{
 		r: 12,
 	}
-	fmt.Printf("Area of circle is %f", c.area())
-	fmt.Printf("Area of circle is %f", c.perm())
+	fmt.Printf("Area of circle is %f\n", c.area())
+	fmt.Printf("Perimeter of circle is %f\n", c.perm())
+
+	// function call with pointer
+	// following will error out
+	// area(rp)
+
+	// function call with value argument
+	area(r)
+
+	// method call with pointer reciver
+	rp := &r
+	fmt.Println("Rectangle area (pointer): ", rp.area())
+	fmt.Println("Rectangle perim (pointer): ", rp.perim())
+
+	// function call with pointer param
+	perim(rp)
+
+	// calling pointer receiver with a value
+	rp.perim()
+
 }
