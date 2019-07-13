@@ -5,9 +5,12 @@ import (
 	"math"
 )
 
+// type struct
 type rect struct {
 	width, height int
 }
+
+// type circle struct
 type Circle struct {
 	r float64
 }
@@ -19,7 +22,6 @@ func (r *rect) area() int {
 }
 
 // function with value argument
-
 func area(r rect) {
 	fmt.Printf("Area of rectangle - function results:%d \n", r.height*r.width)
 }
@@ -36,25 +38,25 @@ func (r rect) perim() int {
 
 // value receivers
 // method with same name area() for struct Circle
-
 func (c Circle) area() float64 {
 	return math.Pi * c.r * c.r
 }
 
-func (c Circle) perm() float64 {
+// method with same name perim() for struct Circle
+func (c Circle) perim() float64 {
 	return 2 * math.Pi * c.r
 }
+
 func main() {
 	r := rect{width: 10, height: 5}
 
+	// method call with value receiver
 	fmt.Println("Rectangle area (value): ", r.area())
 	fmt.Println("Rectangle perimeter (value):", r.perim())
 
-	c := Circle{
-		r: 12,
-	}
+	c := Circle{r: 12}
 	fmt.Printf("Area of circle is %f(value)\n", c.area())
-	fmt.Printf("Perimeter of circle is (value)%f\n", c.perm())
+	fmt.Printf("Perimeter of circle is (value)%f\n", c.perim())
 
 	// function call with pointer
 	// following will error out
