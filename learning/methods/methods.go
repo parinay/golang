@@ -47,14 +47,14 @@ func (c Circle) perm() float64 {
 func main() {
 	r := rect{width: 10, height: 5}
 
-	fmt.Println("Rectangle area: ", r.area())
-	fmt.Println("Rectangle perimeter:", r.perim())
+	fmt.Println("Rectangle area (value): ", r.area())
+	fmt.Println("Rectangle perimeter (value):", r.perim())
 
 	c := Circle{
 		r: 12,
 	}
-	fmt.Printf("Area of circle is %f\n", c.area())
-	fmt.Printf("Perimeter of circle is %f\n", c.perm())
+	fmt.Printf("Area of circle is %f(value)\n", c.area())
+	fmt.Printf("Perimeter of circle is (value)%f\n", c.perm())
 
 	// function call with pointer
 	// following will error out
