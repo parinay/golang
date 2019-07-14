@@ -9,8 +9,13 @@ type Rect struct {
 	h float64
 }
 
+// empty interface - an interface with zero methods
+// All "types" implement empty interface
+
 func explain(i interface{}) {
-	fmt.Printf("Value given to explain function is of type '%T' and value '%v'\n", i, i)
+	//	fmt.Printf("Value given to explain function is of type '%T' and value '%v'\n", i, i)
+	v, ok := i.(int)
+	fmt.Println(v, ok)
 }
 
 func main() {
