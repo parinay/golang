@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func hello(done chan bool) {
 	fmt.Println("Hello World goroutine")
@@ -41,4 +44,26 @@ func main() {
 	chanl := make(chan int)
 	go sendData(chanl)
 	fmt.Println(<-chanl)
+
+	// buffered channels
+
+	ch := make(chan string, 3)
+	ch <- "abcd"
+	ch <- "efgh"
+
+	fmt.Println("Capacity is", cap(ch))
+	fmt.Println("Length is", len(ch))
+
+	fmt.Println("Read Value", <-ch)
+	fmt.Println("Length is", len(ch))
+
+	ch1 := make(chan int, 2)
+
+	go write(ch1)
+	time.Sleep(2 * time.Second)
+
+	for v := range ch1 {
+		fmt.Println("read value", v, "from ch1")
+		time.Sleep(2 * time.Second)
+	}
 }

@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func digits(number int, dg chan int) {
 	defer close(dg)
 	for number != 0 {
@@ -37,4 +39,12 @@ func calcCubes(number int, qb chan int) {
 // channel with send only channel
 func sendData(sendch chan<- int) {
 	sendch <- 10
+}
+
+func write(ch chan int) {
+	defer close(ch)
+	for i := 0; i < 5; i++ {
+		ch <- i
+		fmt.Println("Successfully wrote", i, "to ch")
+	}
 }
