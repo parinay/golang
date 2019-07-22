@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type bill struct {
 	citizen bool
@@ -15,7 +13,7 @@ type ana struct {
 	tax     float64
 }
 
-func main() {
+func one() {
 	var b bill
 	var a ana
 
