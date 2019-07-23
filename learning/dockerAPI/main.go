@@ -28,6 +28,7 @@ func main() {
 		fmt.Println("Error pulling image")
 		panic(err)
 	}
+	defer out.Close()
 	io.Copy(os.Stdout, out)
 
 	resp, err := cli.ContainerCreate(ctx, &container.Config{
@@ -45,4 +46,24 @@ func main() {
 
 	fmt.Println(resp.ID)
 
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{})
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println("List of existing containers is...")
+	for _, container := range containers {
+		fmt.Printf("Container ID=%s Container Status=%s Container Label=%s Container Name=%s\n", container.ID, container.Status, container.Labels, container.Names)
+	}
+
+	// List images
+
+	images, err := cli.ImageList(ctx, types.ImageListOptions{})
+	if err != nil {
+		panic(err)
+	}
+
+	for _, image := range images {
+		fmt.Println(image.ID)
+	}
 }
