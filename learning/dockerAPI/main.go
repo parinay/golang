@@ -66,4 +66,14 @@ func main() {
 	for _, image := range images {
 		fmt.Println(image.ID)
 	}
+
+	ilr, err := cli.ImageLoad(ctx, "/infoblox/data/config", true)
+	if err != nil {
+		panic(err)
+	}
+
+	if images == true {
+		fmt.Println("Image load successful")
+	}
+
 }

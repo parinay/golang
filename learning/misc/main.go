@@ -3,6 +3,8 @@ package main
 func main() {
 
 	one()
-	two()
-	mcFloatFace()
+	//two()
+	//mcFloatFace()
+	term()
+	salias()
 }
