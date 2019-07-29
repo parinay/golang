@@ -15,4 +15,7 @@ func main() {
 	// Custom Errors
 	customErrors()
 
+	// Custome Methods
+	customMethods()
+
 }
