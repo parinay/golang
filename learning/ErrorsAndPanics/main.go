@@ -12,4 +12,7 @@ func main() {
 	// match pattern
 	assertCompare()
 
+	// Custom Errors
+	customErrors()
+
 }
