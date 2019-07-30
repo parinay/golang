@@ -7,7 +7,6 @@ func init() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 }
 func example() {
-
 	// Will print: "[date] [time] [filename]:[line]: [text]"
 	log.Println("Logging w/ line numbers on golangcode.com")
 }

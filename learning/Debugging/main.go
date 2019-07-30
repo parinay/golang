@@ -2,5 +2,8 @@ package main
 
 func main() {
 	// log.SetFlags
-	usingSetFlags()
+	//	usingSetFlags()
+
+	// package runtime
+	usingRuntime()
 }
