@@ -6,13 +6,15 @@ import (
 	"strings"
 )
 
-func fileName(original string) string {
+func fileName(original string) []string {
 	i := strings.LastIndex(original, "/")
+	var result []string
 	if i == -1 {
-		return original
+		result = append(result, original)
 	} else {
-		return original[i+1:]
+		result = append(result, original[i+1:])
 	}
+	return result
 }
 
 func debugLog(msg string) {
