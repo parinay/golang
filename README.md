@@ -1,9 +1,14 @@
 # golang
 
 References
-- https://golang.org/doc/effective_go.html
-- https://golang.org/doc/faq
-- https://golangbot.com
-- https://www.calhoun.io/
-- https://www.ardanlabs.com/blog/
-- https://roberto.selbach.ca/blog/
+    golang references
+    - [Effective go](https://golang.org/doc/effective_go.html)
+    - [Go FAQ](https://golang.org/doc/faq)
+    - [Concurrency](https://github.com/golang/go/wiki/LearnConcurrency)
+    Best Blogs
+    - [GolangBots](https://golangbot.com)
+    - [Calhoun.io](https://www.calhoun.io/)
+    - [Ardan Labs](https://www.ardanlabs.com/blog/)
+    - [Roberto Selbach](https://roberto.selbach.ca/blog/)
+    - [Run Go](https://medium.com/rungo)
+
