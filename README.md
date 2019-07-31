@@ -2,7 +2,7 @@
 
 References
     golang references
-    - [Effective go](https://golang.org/doc/effective_go.html)
+    - [Effective go](https://golang.org/doc/effective_go.html)  \
     - [Go FAQ](https://golang.org/doc/faq)
     - [Concurrency](https://github.com/golang/go/wiki/LearnConcurrency)
     Best Blogs
