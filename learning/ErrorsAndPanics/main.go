@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// Assert underlying struct type and get more information
 	// from struct fields using func()
@@ -17,5 +19,9 @@ func main() {
 
 	// Custome Methods
 	customMethods()
+
+	//panic and recover
+	a()
+	fmt.Println("normally returned from a()")
 
 }
