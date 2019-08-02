@@ -9,4 +9,13 @@ func main() {
 	readSmall()
 	// read lines
 	readLine()
+
+	// write string
+	writeString()
+
+	// write bytes
+	writeBytes()
+
+	//writeLine
+	writeLine()
 }
