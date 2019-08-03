@@ -18,4 +18,10 @@ func main() {
 
 	//writeLine
 	writeLine()
+
+	//append file
+	appendFile()
+
+	//concurrent write
+	concurrent()
 }
