@@ -1,11 +1,11 @@
 # golang
 
 References
-    golang references \
+    * golang references \
     - [Effective go](https://golang.org/doc/effective_go.html)  \
     - [Go FAQ](https://golang.org/doc/faq) \
     - [Concurrency](https://github.com/golang/go/wiki/LearnConcurrency) \
-    Best Blogs \
+    * Best Blogs \
     - [GolangBots](https://golangbot.com) \
     - [Calhoun.io](https://www.calhoun.io/) \
     - [Ardan Labs](https://www.ardanlabs.com/blog/) \
