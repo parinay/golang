@@ -2,9 +2,15 @@ package main
 
 import "fmt"
 
-func helloWorld() string {
-	return "Hello, World!"
+const helloPrefix = "Hello, "
+
+func helloWorld(name string) string {
+	if name == "" {
+		return helloPrefix + "World!"
+	} else {
+		return helloPrefix + name
+	}
 }
 func main() {
-	fmt.Println(helloWorld())
+	fmt.Println(helloWorld("World"))
 }
