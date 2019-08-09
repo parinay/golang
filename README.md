@@ -13,4 +13,4 @@
 * [Ardan Labs](https://www.ardanlabs.com/blog/) 
 * [Roberto Selbach](https://roberto.selbach.ca/blog/) 
 * [Run Go](https://medium.com/rungo) 
-
+* [Cover](https://blog.golang.org/cover)
