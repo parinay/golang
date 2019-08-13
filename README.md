@@ -5,7 +5,6 @@
 * [Effective go](https://golang.org/doc/effective_go.html)  
 * [Go FAQ](https://golang.org/doc/faq) 
 * [Concurrency](https://github.com/golang/go/wiki/LearnConcurrency) 
-* [TDD](https://dev.to/quii/learn-go-by-writing-tests--m63)
 * [Learning Go with tests](https://github.com/quii/learn-go-with-tests/releases/download/10.0.1/learn-go-with-tests.epub)
 * [Resoures for new go programmers](https://dave.cheney.net/resources-for-new-go-programmers)
 ## Best Blogs 
@@ -15,8 +14,12 @@
 * [Roberto Selbach](https://roberto.selbach.ca/blog/) 
 * [Run Go](https://medium.com/rungo) 
 * [Cover](https://blog.golang.org/cover)
+* [TDD](https://dev.to/quii/learn-go-by-writing-tests--m63)
 
 ## Courses
 * [Golang/Wikig/Courses](https://github.com/golang/go/wiki/Courses)
 * [Web Applications using Go](https://www.usegolang.com/)
 * [Distributed Systems](http://css.csail.mit.edu/6.824/2014/)
+
+## Go Stye Guide
+* [Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
