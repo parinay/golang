@@ -7,6 +7,7 @@
 * [Concurrency](https://github.com/golang/go/wiki/LearnConcurrency) 
 * [Learning Go with tests](https://github.com/quii/learn-go-with-tests/releases/download/10.0.1/learn-go-with-tests.epub)
 * [Resoures for new go programmers](https://dave.cheney.net/resources-for-new-go-programmers)
+* [Strings in Go](https://blog.golang.org/strings)
 ## Best Blogs 
 * [GolangBots](https://golangbot.com) 
 * [Calhoun.io](https://www.calhoun.io/) 
