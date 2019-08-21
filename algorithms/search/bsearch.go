@@ -18,3 +18,14 @@ func bsearch(a []int, x int) bool {
 		return false
 	}
 }
+
+func bsearchStr(a []string, y string) bool {
+	i := sort.Search(len(a), func(i int) bool { return y <= a[i] })
+	if i < len(a) && a[i] == y {
+		fmt.Printf("Found %s at index %d in %v\n", y, i, a)
+		return true
+	} else {
+		fmt.Printf("Not Found %s in %v\n", y, a)
+	}
+	return false
+}
