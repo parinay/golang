@@ -15,4 +15,7 @@ func main() {
 	sorti(f)
 
 	maps()
+
+	a := []int{8, 9, 10, 4, 1, 12}
+	insertSort(a)
 }
