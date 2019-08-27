@@ -23,6 +23,7 @@
 * [Cover](https://blog.golang.org/cover)
 * [TDD](https://dev.to/quii/learn-go-by-writing-tests--m63)
 * [pprof](https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/)
+* [Unicode and Character Set](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 ## Courses
 * [Golang/Wikig/Courses](https://github.com/golang/go/wiki/Courses)
 * [Web Applications using Go](https://www.usegolang.com/)
